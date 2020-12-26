@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Photo Gallery</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="lightbox.min.css" rel="stylesheet" type="text/css" />
+    <script src="lightbox-plus-jquery.min.js"></script>
   </head>
   <body>
       <header>
@@ -14,16 +16,18 @@
                       <li><a href="index.html">Home</a></li>
                       <li><a href="gallery.html">Photo Gallery</a></li>
                       <li><a href="trips.html">Trips</a></li>
-                      <li><a href="about.html">About</a></li>
+                      <li><a href="about.html">The Old Gift</a></li>
                   </ul>
               </nav>
           </div>
       </header>
     <script src="script.js"></script>
-    <h1> Photo Gallery </h1>
-    <img src="images/D5B0301D-1A17-4507-BF14-1C5B038499B5.JPG" height="400">
-    <img src="images/IMG_7613.JPG" height="400">
-    <img src="images/bigsurswing.jpg" height="400">
-    <img src="images/bigsurswing2.jpg" height="400">
+    <div class="gallery">
+      <a href="images/bigsurswing.jpg" data-lightbox="mygallery" data-title="You on the swing at Plaskett Ridge"><img src="images/bigsurswing.jpg" width="400"></a>
+      <a href="images/bigsurswing2.jpg" data-lightbox="mygallery" data-title="You on the swing at Plaskett Ridge"><img src="images/bigsurswing2.jpg" width="400"></a>
+      <a href="images/D5B0301D-1A17-4507-BF14-1C5B038499B5.JPG" data-lightbox="mygallery" data-title="Avila Ridge hike together"><img src="images/D5B0301D-1A17-4507-BF14-1C5B038499B5.JPG" width="400"></a>
+      <a href="images/IMG_7613.JPG" data-lightbox="mygallery" data-title="Chrissy's wedding together"><img src="images/IMG_7613.JPG" width="400"></a>
+      <a href="images/pfeifferrock.PNG" data-lightbox="mygallery" data-title="On top of the rock at Pfeiffer Beach"><img src="images/pfeifferrock.PNG" width="400"></a>
+    </div>
   </body>
 </html>
